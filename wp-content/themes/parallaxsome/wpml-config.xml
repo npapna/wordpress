@@ -1,0 +1,48 @@
+<wpml-config>
+<admin-texts>
+<key name="theme_mods_parallaxsome">
+    <key name="slider_menu_title" />
+    <key name="about_menu_title" />
+    <key name="team_menu_title" />
+    <key name="services_menu_title" />
+    <key name="testimonials_menu_title" />
+    <key name="fact_menu_title" />
+    <key name="portfolio_menu_title" />
+    <key name="clients_menu_title" />
+    <key name="contact_menu_title" />
+    <key name="about_section_title" />
+    <key name="about_section_sub_title" />
+    <key name="team_section_title" />
+    <key name="team_section_sub_title" />
+    <key name="team_section_description" />
+    <key name="team_view_more_txt" />
+    <key name="services_section_title" />
+    <key name="services_section_sub_title" />
+    <key name="services_section_description" />
+    <key name="testimonials_section_title" />
+    <key name="testimonials_section_sub_title" />
+    <key name="fact_section_title" />
+    <key name="fact_section_sub_title" />
+    <key name="fact_section_description" />
+    <key name="fact_counter_title_0" />
+    <key name="fact_counter_title_1" />
+    <key name="fact_counter_title_2" />
+    <key name="fact_counter_title_3" />
+    <key name="portfolio_section_title" />
+    <key name="portfolio_section_sub_title" />
+    <key name="portfolio_section_description" />
+    <key name="blog_section_title" />
+    <key name="blog_section_sub_title" />
+    <key name="blog_section_read_button" />
+    <key name="blog_section_view_all_txt" />
+    <key name="clients_section_title" />
+    <key name="clients_section_sub_title" />
+    <key name="contact_section_title" />
+    <key name="contact_section_sub_title" />
+    <key name="contact_section_sub_title" />
+    <key name="contact_section_address" />
+    <key name="contact_map_caption" />
+    <key name="ps_copyright_text" />
+</key>
+</admin-texts>
+</wpml-config>

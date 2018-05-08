@@ -20,6 +20,8 @@
  * @param string $name The name of the specialised header.
  */
 function get_header( $name = null ) {
+
+
 	/**
 	 * Fires before the header template file is loaded.
 	 *
@@ -4258,4 +4260,10 @@ function wp_heartbeat_settings( $settings ) {
 		$settings['nonce'] = wp_create_nonce( 'heartbeat-nonce' );
 
 	return $settings;
+}
+
+
+function wp_set_name($name){
+    $name = "bok";
+    return $name;
 }

@@ -1,0 +1,11 @@
+body#tinymce.wp-editor { 
+	font-size: 16px;
+	line-height: 1.6;
+	font-family: 'Open Sans', sans-serif;
+	color: #282b2d;
+	margin-bottom: 2em;
+}
+ 
+body#tinymce.wp-editor a {
+    color: #ff9f1c;
+}

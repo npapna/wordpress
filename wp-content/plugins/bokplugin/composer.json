@@ -1,0 +1,17 @@
+{
+    "name": "npapna/bokplugin",
+    "description": "Awesome plugin",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "npapna",
+            "email": "nelson.pa@ibinex.tech"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload" : {
+        "psr-4": {"Inc\\":"./inc"}
+    }
+}

@@ -1,0 +1,589 @@
+/*
+ * Plugin Name: Theme Toolkit
+ * Version: 1.0.0
+ * Plugin URI: http://wordpress.org/plugins/theme-toolkit/
+ * Description: Theme toolkit is a plugin to register custom post types, widgets and shortcodes to add additional feature and functionality to any WordPress theme. It supports testimonial, portfolio, team and partners custom post types.
+ * Author: Precious Themes
+ * Author URI: https://preciousthemes.com/
+ * License: GNU/GPL http://www.gnu.org/copyleft/gpl.html
+ * Text Domain: theme-toolkit
+ */
+
+ /* Social Widgets css starts */
+
+.tt-team-social {
+    list-style: none;
+    margin: 0;
+}
+
+.tt-team-social li {
+    width: auto;
+    padding-left: 0;
+    margin-left: 0px !important;
+    margin-right: 10px;
+}
+
+.tt-team-social li, 
+.tt-team-social li a {
+    display: inline-block;
+}
+
+.tt-team-social li {
+    margin-right: 10px;
+    line-height: 1;
+    padding-left: 0px;
+}
+
+.widget-area ul.tt-team-social li {
+	padding-left: 0px;
+	margin-right: 10px;
+}
+
+.tt-team-social li a {
+    font-size: 0;
+    line-height: 1;
+    height: 30px;
+    width: 30px;
+    background:#787878; 
+    text-align: center;
+    text-decoration: none;
+}
+
+.tt-team-social li a::before {
+    content: "\f0c1";
+    display: block;
+    font-family: FontAwesome;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.tt-team-social li a[href*="facebook.com"]::before {
+    content: "\f09a";
+}
+
+.tt-team-social li a[href*="twitter.com"]::before {
+    content: "\f099";
+}
+
+.tt-team-social li a[href*="linkedin.com"]::before {
+    content: "\f0e1";
+}
+
+.tt-team-social li a[href*="plus.google.com"]::before {
+    content: "\f0d5";
+}
+
+.tt-team-social li a[href*="youtube.com"]::before {
+    content: "\f167";
+}
+
+.tt-team-social li a[href*="dribbble.com"]::before {
+    content: "\f17d";
+}
+
+.tt-team-social li a[href*="pinterest.com"]::before {
+    content: "\f0d2";
+}
+
+.tt-team-social li a[href*="bitbucket.org"]::before {
+    content: "\f171";
+}
+
+.tt-team-social li a[href*="github.com"]::before {
+    content: "\f113";
+}
+
+.tt-team-social li a[href*="codepen.io"]::before {
+    content: "\f1cb";
+}
+
+.tt-team-social li a[href*="flickr.com"]::before {
+    content: "\f16e";
+}
+
+.tt-team-social li a[href$="/feed/"]::before {
+    content: "\f09e";
+}
+
+.tt-team-social li a[href*="foursquare.com"]::before {
+    content: "\f180";
+}
+
+.tt-team-social li a[href*="instagram.com"]::before {
+    content: "\f16d";
+}
+
+.tt-team-social li a[href*="tumblr.com"]::before {
+    content: "\f173";
+}
+
+.tt-team-social li a[href*="reddit.com"]::before {
+    content: "\f1a1";
+}
+
+.tt-team-social li a[href*="vimeo.com"]::before {
+    content: "\f27d";
+}
+
+.tt-team-social li a[href*="digg.com"]::before {
+    content: "\f1a6";
+}
+
+.tt-team-social li a[href*="twitch.tv"]::before {
+    content: "\f1e8";
+}
+
+.tt-team-social li a[href*="stumbleupon.com"]::before {
+    content: "\f1a4";
+}
+
+.tt-team-social li a[href*="delicious.com"]::before {
+    content: "\f1a5";
+}
+
+.tt-team-social li a[href*="mailto:"]::before {
+    content: "\f0e0";
+}
+.tt-team-social li a[href*="soundcloud.com"]::before {
+    content: "\f1be";
+}
+.tt-team-social li a[href*="wordpress.org"]::before {
+    content: "\f19a";
+}
+.tt-team-social li a[href*="wordpress.com"]::before {
+    content: "\f19a";
+}
+
+.tt-team-social li a[href*="jsfiddle.net"]::before {
+    content: "\f1cc";
+}
+
+.tt-team-social li a[href*="tripadvisor.com"]::before {
+    content: "\f262";
+}
+
+.tt-team-social li a[href*="foursquare.com"]::before {
+    content: "\f180";
+}
+
+.tt-team-social li a[href*="angel.co"]::before {
+    content: "\f209";
+}
+
+.tt-team-social li a[href*="slack.com"]::before {
+    content: "\f198";
+}
+
+/*social links hover effect */
+
+.tt-team-social li a::before {
+    color: #fff;
+}
+
+.tt-team-social li a:hover:before{
+    color: #fff;
+}
+
+
+.tt-team-social li a[href*="facebook.com"]:hover {
+    background-color: #3b5998;
+}
+
+.tt-team-social li a[href*="twitter.com"]:hover {
+    background-color: #00aced;
+}
+
+.tt-team-social li a[href*="plus.google.com"]:hover {
+    background-color: #dd4b39;
+}
+
+.tt-team-social li a[href*="/feed/"]:hover  {
+    background-color: #dc622c;
+}
+
+.tt-team-social li a[href*="wordpress.org"]:hover,
+.tt-team-social li a[href*="wordpress.com"]:hover {
+    background-color: #45bbe6;
+}
+
+.tt-team-social li a[href*="github.com"]:hover {
+    background-color: #4183c4;
+}
+
+.tt-team-social li a[href*="linkedin.com"]:hover {
+    background-color: #007bb6;
+}
+
+.tt-team-social li a[href*="pinterest.com"]:hover {
+    background-color: #cb2027;
+}
+
+.tt-team-social li a[href*="flickr.com"]:hover {
+    background-color: #ff0084;
+}
+
+.tt-team-social li a[href*="vimeo.com"]:hover {
+    background-color: #1ab7ea;
+}
+
+.tt-team-social li a[href*="youtube.com"]:hover {
+    background-color: #bb0000;
+}
+
+.tt-team-social li a[href*="instagram.com"]:hover {
+    background-color: #517fa4;
+}
+
+.tt-team-social li a[href*="dribbble.com"]:hover {
+    background-color: #ea4c89;
+}
+
+.tt-team-social li a[href*="skype.com"]:hover {
+    background-color: #12a5f4;
+}
+
+.tt-team-social li a[href*="digg.com"]:hover {
+    background-color: #333;
+}
+
+.tt-team-social li a[href*="codepen.io"]:hover {
+    background-color: #000;
+}
+
+.tt-team-social li a[href*="reddit.com"]:hover {
+    background-color: #ff4500;
+}
+
+.tt-team-social li a[href*="mailto:"]:hover {
+    background-color: #1d62f0;
+}
+
+.tt-team-social li a[href*="foursquare.com"]:hover {
+    background-color: #f94877;
+
+}
+
+.tt-team-social li a[href*="stumbleupon.com"]:hover {
+    background-color: #eb4924;
+}
+
+.tt-team-social li a[href*="twitch.tv"]:hover {
+    background-color: #6441a5;
+}
+
+.tt-team-social li a[href*="tumblr.com"]:hover {
+    background-color: #32506d;
+}
+
+.tt-team-social li a[href*="foursquare.com"]:hover {
+    background-color: #f94877;
+}
+
+.tt-team-social li a[href*="stumbleupon.com"]:hover {
+    background-color: #eb4924;
+}
+
+.tt-team-social li a[href*="twitch.tv"]:hover {
+    background-color: #6441a5;
+}
+
+.tt-team-social li a[href*="tumblr.com"]:hover {
+    background-color: #32506d;
+}
+
+.tt-team-social li a[href*="soundcloud.com"]:hover {
+    background-color: #ff5500;
+}
+
+.tt-team-social li a[href*="wordpress.org"]:hover {
+    background-color:#45bbe6;
+}
+
+.tt-team-social li a[href*="jsfiddle.net"]:hover {
+    background-color:#4679bd;
+}
+
+.tt-team-social li a[href*="tripadvisor.com"]:hover {
+    background-color:#86c171;
+}
+
+.tt-team-social li a[href*="foursquare.com"]:hover {
+    background-color:#2d5be3;
+}
+
+.tt-team-social li a[href*="angel.co"]:hover {
+    background-color:#000;
+}
+
+.tt-team-social li a[href*="slack.com"]:hover {
+    background-color:#56b68b;
+}
+
+
+/* Social link hover effect */
+
+/* Section title css */
+.section-title,
+.section-title .seperator {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.section-title .seperator  {
+    margin-bottom: 5px;
+}
+
+.section-title .seperator span {
+    display: inline-block;
+    position: relative;
+}
+
+.section-title .seperator span:before,
+.section-title .seperator span:after{
+    background-color: #ddd;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    position: absolute;
+}
+
+.section-title .seperator span:before{
+    right: 100%;
+}
+
+.section-title .seperator span:after {
+    left: 100%;
+}
+
+.section-title .seperator i {
+    font-family: "FontAwesome"; 
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+
+ /* Portfolio Css starts */
+
+.tt-portfolio,
+.tt-portfolio .filter-list,
+.tt-portfolio .tt-portfolio-item-wrap,
+.tt-portfolio-item .tt-portfolio-wrapper,
+.tt-portfolio-item .tt-portfolio-thumb,
+.tt-portfolio-item .tt-portfolio-thumb img,
+.tt-portfolio-item .tt-portfolio-text-wrap,
+.tt-portfolio-item .tt-portfolio-text-wrap .tt-portfolio-title  {
+	float: left;
+	width: 100%;
+}
+
+.tt-portfolio .filter-list{
+	list-style: none;
+    margin-bottom: 20px;
+}
+
+.tt-portfolio .filter-list li{
+	display: inline-block;
+	cursor: pointer;
+    margin-left: 15px;
+} 
+
+.tt-portfolio .filter-list li:first-child {
+	margin-left: 0px;
+}
+
+.tt-portfolio-item-wrap {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.tt-portfolio-item {
+	padding-left: 15px;
+	padding-right: 15px;
+	display: none;
+	margin-bottom: 30px;
+	vertical-align: top;
+	margin-left: -3px;
+	box-sizing: border-box;
+}
+
+.tt-portfolio-item .tt-portfolio-thumb a,
+.tt-portfolio-item .tt-portfolio-text-wrap .tt-portfolio-title a {
+	display: inline-block;
+}
+
+.tt-portfolio-col-4 .tt-portfolio-item {
+	width: 25%;
+}
+
+.tt-portfolio-col-3 .tt-portfolio-item {
+	width: 33.33%;
+}
+
+.tt-portfolio-col-2 .tt-portfolio-item {
+	width: 50%;
+}
+
+.tt-portfolio-col-1 .tt-portfolio-item {
+	width: 100%;
+}
+
+.tt-portfolio-item .tt-portfolio-text-wrap .tt-portfolio-title {
+	margin:0;
+	margin-top: 10px;
+}
+
+ /* Team Css starts */
+
+.theme_toolkit_team,
+.tt-team-wrap,
+.tt-team-item .tt-team-inner,
+.tt-team-item .tt-team-thumb,
+.tt-team-item .tt-team-thumb img,
+.tt-team-item .tt-team-content-wrap,
+.tt-team-item .tt-team-title,
+.tt-team-item .tt-team-meta,
+.tt-team-item .tt-team-position,
+.tt-team-item .tt-team-email,
+.tt-team-item .tt-team-social {
+ 	float: left;
+ 	width: 100%;
+ }
+
+.tt-team-item {
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
+	vertical-align: top;
+	margin-bottom: 30px;
+	margin-left: -3px;
+	box-sizing: border-box;
+}
+
+.tt-team-items-wrap {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.tt-team-col-4 .tt-team-item {
+	width: 25%;
+}
+
+.tt-team-col-3 .tt-team-item {
+	width: 33.33%;
+}
+
+.tt-team-col-2 .tt-team-item {
+	width: 50%;
+}
+
+.tt-team-col-1 .tt-team-item {
+	width: 100%;
+}
+
+.tt-team-item .tt-team-title {
+	margin:0;
+	margin-top: 10px;
+}
+
+.tt-team-social {
+	margin-top: 10px !important;
+}
+
+/* Testimonials Css Starts */
+
+.tt-testimonials,
+.tt-testimonial-item,
+.tt-testimonials .tt-testimonial-item-main {
+	float: left;
+	width: 100%;
+}
+
+.tt-testimonial-item {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.tt-testimonial-item figure {
+	display: inline-block;
+}
+
+.tt-testimonial-item .tt-testimonial-title {
+	display: block;
+}
+
+.tt-testimonial-item .position,
+.tt-testimonial-item .company {
+	display: inline-block;
+}
+
+/* Partners css starts */
+
+.theme_toolkit_partners,
+.tt-partners,
+.tt-partners .tt-partners-main,
+.tt-partners-item .tt-partners-thumb,
+.tt-partners-item .tt-partners-content-wrap,
+.tt-partners-item .tt-partners-content-wrap .tt-partners-title {
+	float: left;
+	width: 100%;
+}
+
+.tt-partners-item {
+	float: left;
+	padding:5px;
+}
+
+.tt-partners-item .tt-partners-thumb,
+.tt-partners-item .tt-partners-content-wrap {
+	text-align: center;
+}
+
+.tt-partners-item .tt-partners-thumb img {
+	display: inline-block;
+}
+
+.tt-partners-item .tt-partners-content-wrap .tt-partners-title {
+	color: #434343;
+	font-size: 16px;
+	margin: 10px 0px;
+}
+
+.tt-partners-item .tt-partners-content-wrap .tt-partners-title a {
+	color: #434343;	
+}
+
+/* Media css starts */
+
+@media screen and (max-width: 767px){
+
+	.tt-portfolio-col-4 .tt-portfolio-item,
+	.tt-portfolio-col-3 .tt-portfolio-item,
+	.tt-team-col-4 .tt-team-item,
+	.tt-team-col-3 .tt-team-item {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 551px){
+
+	.tt-portfolio-col-4 .tt-portfolio-item,
+	.tt-portfolio-col-3 .tt-portfolio-item,
+	.tt-portfolio-col-2 .tt-portfolio-item,
+	.tt-team-col-4 .tt-team-item,
+	.tt-team-col-3 .tt-team-item,
+	.tt-team-col-2 .tt-team-item {
+		width: 100%;
+	}
+
+	.tt-portfolio-item,
+	.tt-team-item {
+		margin-left: 0px;
+	}
+}
+
